@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(0, 110, 255, 0.474);
+}
+
+div {
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15em;
+
+}
+
+img {
+    width: 15em;
+}
+
+.price {
+    padding-right: 0%;
+}

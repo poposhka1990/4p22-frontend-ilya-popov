@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul>
+      <li>Элемент 1</li>
+      <li>Элемент 2</li>
+      <li>Элемент 3</li>
+      <li>Элемент 4</li>
+      <li>Элемент 5</li>
+      <ul>
+        <li>Подэлемент 1</li>
+        <li>Подэлемент 2</li>
+        <li>Подэлемент 3</li>
+        <ul>
+          <li>Подподэлемент 1</li>
+          <li>Подподэлемент 2</li>
+          <li>Подподэлемент 3</li>
+        </ul>
+      </ul>
+    </ul>
+    <hr />
+    <ol type="1" reversed start="5">
+      <li>Элемент 1</li>
+      <li>Элемент 2</li>
+      <li>Элемент 3</li>
+      <li>Элемент 4</li>
+      <li>Элемент 5</li>
+      <ol>
+        <li>Подэлемент 1</li>
+        <li>Подэлемент 2</li>
+        <li>Подэлемент 3</li>
+        <li>Подэлемент 4</li>
+        <li>Подэлемент 5</li>
+      </ol>
+    </ol>
+    <dl>
+      <dt>Термин 1</dt>
+      <dd>Определение</dd>
+      <dt>Термин 2</dt>
+      <dd>Определение</dd>
+    </dl>
+    <table style="border: 1px solid black">
+      <caption>
+        Заголовок таблицы
+      </caption>
+      <thead>
+        <tr>
+          <th>Студент</th>
+          <th>Дата рождения</th>
+          <th>Дата присоединения к курсу</th>
+        </tr>
+      </thead>
+      <tbody>
+        <colgroup>
+            <col bgcolor="lime"></col>
+            <col span="2" style="background-color: blue;"></col>
+        </colgroup>
+        <tr>
+          <td>Petr Cech</td>
+          <td>20.05.1982</td>
+          <td>15.03.2022</td>
+        </tr>
+        <tr>
+          <td>Petr Cech</td>
+          <td>20.05.1982</td>
+          <td>15.03.2022</td>
+        </tr>
+        <tr>
+          <td>Petr Cech</td>
+          <td>20.05.1982</td>
+          <td>15.03.2022</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3" align="center" bgcolor="#ff5035">Подвал</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
