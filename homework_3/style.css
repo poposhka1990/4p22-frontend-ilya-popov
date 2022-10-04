@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+body {
+    background: rgba(255, 255, 128, .5);;
+}
+
+header, footer {
+    color: white;
+    background: black;
+    border: 3px solid black;
+    text-align: center;
+}
+
+h3 {
+    background-color: black;
+    color: white;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+#footer-link {
+    color: white;
+}
+
+p, article {
+    margin: 10px;
+    text-align: justify;
+}
+
+ul {
+
+}
