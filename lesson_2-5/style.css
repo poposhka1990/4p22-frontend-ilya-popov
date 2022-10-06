@@ -1,0 +1,22 @@
+.common-section-content__paragraph {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* .common-section__heading {
+    color: red;
+} */
+
+.common-section-content__paragraph_green {
+    color: green;
+}
+
+.common-section {
+    padding: 20px;
+    border: 2px solid gray;
+
+    &__heading {
+        color: red;
+    }
+
+}
