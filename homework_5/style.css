@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header {
+    background: #590BFF;
+    color: white;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+main {
+    position: relative;
+    left: 5px;
+    top: 54px;
+    left: 335px;
+}
+
+h2 {
+    margin-right: 10vh;
+    color: white;
+    background: #590BFF;
+    position: sticky;
+    top: 0;
+}
+
+p {
+}
+
+aside {
+    position: absolute;
+    left: 5px;
+    top: 136px;
+
+}
