@@ -4,14 +4,15 @@
     font-family: sans-serif;
 }
 
-header {
+.header {
     height: 80px;
     background: #D4D5D4;
     color: #FFFEFE;
     font-weight: lighter;
 }
 
-h1 {
+.header__h1 {
+    font-weight: lighter;
     padding: 20px;
     text-align: center left;
 }
@@ -19,16 +20,16 @@ h1 {
 aside {
     font-size: larger;
     position: relative;
-    left: 15px;
-    top: 80px;
+    left: 0;
+    top: 50px;
 }
 
-.caption {
-    /* color: #D4D5D4; */
+.list__caption {
     font-size: 25px;
+    font-weight: lighter;
 }
 
-li {
+.list__element {
     padding-top: 10px;
 }
 
@@ -48,7 +49,7 @@ main {
     left: 450px;
 }
 
-h2 {
+.block__heading {
     padding: 10px;
     height: 50px;
     right: 10px;
@@ -60,20 +61,20 @@ h2 {
     top: 0;
 }
 
-p {
+.block__street-name {
     padding-left: 10px;
 }
 
-ul {
+.list {
     list-style: none;
 }
 
-h2 > a {
+.block__heading > .block__heading_undecorated-link {
     color: #FFFEFE;
     text-decoration: none;
 }
 
-li > a {
+.list__element > .list__element-link {
     color: #D4D5D4;
     text-decoration: none;
 }
