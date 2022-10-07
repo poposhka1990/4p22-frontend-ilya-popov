@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.box {
+    width: 50%;
+    height: 50vh;
+    min-height: 400px;
+    background: red;
+}
