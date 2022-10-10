@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lesson 2-7</title>
+        <link rel="stylesheet" type="text/css" href="./style.css" />
+    </head>
+    <body>
+        <form class="form">
+            <label for="name">Имя</label>
+            <input
+                id="name"
+                name="FIO"
+                type="text"
+                placeholder="fill your FIO"
+            />
+            <input aria-label="FIO" name="FIO" type="text" />
+            <input id="email" name="email" type="email" />
+            <input id="password" name="password" type="password" />
+            <input id="tel" name="tel" type="tel" />
+
+            <!-- outdated -->
+            <input type="color" />
+            <input type="date" />
+            <input type="datetime-local" />
+
+            <!-- actual -->
+            <div class="form__file">
+                <input class="form__file_input" type="file" />
+            </div>
+
+            <input id="radio-1" type="radio" name="gender" value="man" />
+            <label for="radio-1">Male</label>
+
+            <div class="form__checkbox">
+                <label for="checkbox-1">Red</label>
+                <input
+                    id="checkbox-1"
+                    type="checkbox"
+                    name="colors"
+                    value="RED"
+                />
+            </div>
+            <div>
+                <label for="checkbox-2">Yellow</label>
+                <input
+                    id="checkbox-2"
+                    type="checkbox"
+                    name="colors"
+                    value="YELLOW"
+                />
+            </div>
+            <div>
+                <label for="checkbox-3">White</label>
+                <input
+                    id="checkbox-3"
+                    type="checkbox"
+                    name="colors"
+                    value="WHITE"
+                />
+            </div>
+            <div>
+                <label for="checkbox-4">Blue</label>
+                <input
+                    id="checkbox-4"
+                    type="checkbox"
+                    name="colors"
+                    value="BLUE"
+                />
+            </div>
+
+            <label for="language"></label>
+            <select name="language" id="language">
+                <option value="RU">Russian</option>
+                <option value="EN">English</option>
+                <option value="FR">French</option>
+            </select>
+
+            <label for="textarea">About</label>
+            <textarea id="textarea" name="textarea"></textarea>
+
+            <button>Отправить</button>
+        </form>
+    </body>
+</html>
