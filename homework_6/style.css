@@ -27,7 +27,7 @@ aside {
     font-size: calc(70 / 2560 * 100vw);
     position: relative;
     left: 0;
-    top: calc(50 / 2560 * 100vw);
+    top: calc(70 / 2560 * 100vw);
 }
 
 .list__caption {
