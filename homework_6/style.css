@@ -95,6 +95,7 @@ main {
     .header__h1 {
         font-size: calc(54 / 719 * 100vw);
         text-align: center;
+        padding-left: 0;
     }
 
     .content {
