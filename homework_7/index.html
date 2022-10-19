@@ -10,30 +10,37 @@
         </style>
     </head>
     <body>
-        <form class="form">
-            <p>Регистрация</p>
-            <input
-                class="form__input"
-                aria-label="email"
-                name="email"
-                type="email"
-                placeholder="Введите e-mail адрес"
-            />
-            <input
-                class="form__input"
-                aria-label="password"
-                name="password"
-                type="password"
-                placeholder="Введите пароль"
-            />
+        <main class="container">
+            <form class="form">
+                <h1>Вход</h1>
+                <label for="email">Email</label>
+                <input
+                    class="form__input"
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="Введите email"
+                />
+                <label for="password" class="password__label">Пароль</label>
+                <input
+                    class="form__input_password"
+                    id="password"
+                    name="password"
+                    type="password"
+                    placeholder="Введите пароль"
+                />
 
-            <div class="form__checkbox">
-                <input id="checkbox" type="checkbox" value="save" />
-                <div class="form__checkbox_box"></div>
-                <label for="checkbox">Запомнить</label>
-            </div>
+                <div class="form__checkbox">
+                    <input id="checkbox" type="checkbox" value="save" />
+                    <div class="form__checkbox_box">
+                        <label for="checkbox" class="form__checkbox_label"
+                            >Я согласен получать обновления на почту</label
+                        >
+                    </div>
+                </div>
 
-            <button class="form__button">Зарегистрироваться</button>
-        </form>
+                <button class="form__button">Войти</button>
+            </form>
+        </main>
     </body>
 </html>
