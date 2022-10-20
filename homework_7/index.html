@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Registation</title>
+        <link rel="stylesheet" type="text/css" href="./style.css" />
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+        </style>
+    </head>
+    <body>
+        <main class="container">
+            <form class="form">
+                <h1>Вход</h1>
+                <label for="email">Email</label>
+                <input
+                    class="form__input"
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="Введите email"
+                />
+                <label for="password" class="password__label">Пароль</label>
+                <input
+                    class="form__input_password"
+                    id="password"
+                    name="password"
+                    type="password"
+                    placeholder="Введите пароль"
+                />
+
+                <div class="form__checkbox">
+                    <input id="checkbox" type="checkbox" value="save" />
+                    <div class="form__checkbox_box">
+                        <label for="checkbox" class="form__checkbox_label"
+                            >Я согласен получать обновления на почту</label
+                        >
+                    </div>
+                </div>
+
+                <button class="form__button">Войти</button>
+            </form>
+        </main>
+    </body>
+</html>
