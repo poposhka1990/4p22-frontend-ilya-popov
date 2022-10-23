@@ -45,8 +45,12 @@ a {
     text-decoration: none;
 }
 
-a:visited {
+.login {
     color: #1A226B;
+}
+
+a:hover {
+    color: #94B454;
 }
 
 .box-form {
