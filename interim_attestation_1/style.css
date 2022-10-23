@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leftside {
+    display: flex;
+    align-items: center;
+}
+
+.leftside > img {
+    padding: 0 15px;
+}
+
+.rightside, .index {
+    padding: 0 15px;
+}
+
+a {
+    text-decoration: none;
+}
