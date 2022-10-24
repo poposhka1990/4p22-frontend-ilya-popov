@@ -69,6 +69,7 @@ a:hover {
 form {
     display: flex;
     flex-direction: column;
+    /* padding: 10px 10px; */
 }
 
 .box-form__h1 {
@@ -80,7 +81,6 @@ form {
 }
 
 .box-form__label {
-    margin-left: calc(7 / 1440 * 100vw);
     font-weight: 700;
     font-size: calc(16 / 1440 * 100vw);
     line-height: calc(16 / 1440 * 100vw);

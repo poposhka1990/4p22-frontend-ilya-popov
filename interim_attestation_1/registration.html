@@ -52,20 +52,29 @@
                         <p class="box-form__label">Пол</p>
                         <div class="box-form__radio_man">
                             <input class="box-form__radio_input" id="radio-1" type="radio" name="gender" value="man">
-                            <div class="box-form__radio_input-modified"></div>
-                            <label class="box-form__label" for="radio-1">Мужчина</label>
+                            <label class="box-form__label radio" for="radio-1">Мужчина</label>
                         </div>
                         <div class="box-form__radio_woman">
                             <input class="box-form__radio_input" id="radio-2" type="radio" name="gender" value="woman">
-                            <div class="box-form__radio_input-modified"></div>
-                            <label class="box-form__label" for="radio-2">Женщина</label>
+                            <label class="box-form__label radio" for="radio-2">Женщина</label>
                         </div>
                     </div>
 
                     <label class="box-form__label" for="textarea">О себе</label>
-                    <textarea class="box-form__textarea" id="textarea" name="textarea"></textarea>
-
-                    <button class="box-form__button">Войти</button>
+                    <textarea class="box-form__textarea" id="textarea" name="textarea" placeholder="Расскажите о себе..."></textarea>
+                    
+                    <div class="box-form__agreement">
+                    <input
+                        class="box-form__checkbox"
+                        id="agreement"
+                        type="checkbox"
+                        name="agreement"
+                    />
+                    <label for="agreement" class="box-form__label check"
+                        >Я согласен получать обновления на почту
+                    </label>
+                    </div>
+                    <button class="box-form__button">Регистрация</button>
                 </form>
             </form>
         </main>

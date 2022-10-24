@@ -80,7 +80,6 @@ form {
 }
 
 .box-form__label {
-    margin-left: calc(7 / 1440 * 100vw);
     font-weight: 700;
     font-size: calc(16 / 1440 * 100vw);
     line-height: calc(16 / 1440 * 100vw);
@@ -105,41 +104,70 @@ form {
     outline: none;
 }
   
-.box-form__input::placeholder {
+.box-form__input::placeholder, .box-form__textarea::placeholder {
     font-weight: 700;
     font-size: calc(28 / 1440 * 100vw);
     line-height: calc(36 / 1440 * 100vw);
     color: #cccccc;
 }
 
+.box-form__textarea::placeholder {
+    padding-left: 6px;
+}
+
 .box-form__radio_man, .box-form__radio_woman {
     position: relative;
     display: flex;
     align-items: center;
+    padding: 3px 0;
+}
+
+.box-form__radio_woman {
+    margin-bottom: 5px;
+}
+
+.radio, .check {
+    font-weight: 400;
 }
 
 .box-form__radio_input {
-    opacity: 0;
-    position: absolute;
-    width: 100%;
-    height: 100%;
+    position: relative;
+    height: 16px;
+    width: 16px;
     top: 0;
     left: 0;
+    margin-right: 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+}
+    
+.box-form__radio_input::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 2px solid #787878;
 }
 
-.box-form__radio_input-modified {
-    width: 16px;
-    height: 16px;
+.box-form__radio_input:checked::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 11px;
+    height: 11px;
     border-radius: 50%;
-    border: 1px solid #787878;
-}
-
-.box-form__radio_input:checked + .box-form__radio_input-modified {
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background: #787878;
-    padding: 1px;
+    background-color: #787878;
+    transform: translate(-50%, -50%);
+    visibility: visible;
+    transition: 0.5 ease-in;
 }
 
 .box-form__textarea {
@@ -197,7 +225,7 @@ form {
         font-size: calc(28 / 768 * 100vw);
     }
 
-    .box-form__input::placeholder {
+    .box-form__input::placeholder, .box-form__textarea::placeholder {
         font-weight: 700;
         font-size: calc(28 / 768 * 100vw);
         line-height: calc(36 / 768 * 100vw);
