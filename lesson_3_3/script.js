@@ -90,5 +90,25 @@ switch (someVariable) {
     default: console.log('default');
 }
 
+const loginInput = document.getElementById('login');
+const passwordInput = document.getElementById('password');
+const button = document.getElementById('send');
+
+loginInput.addEventListener('input', (event) => {
+    console.log(event.target.value)
+});
+
+
+button.addEventListener('click', (event) => {
+    event.preventDefault();
+    console.log(passwordInput.value);
+    console.log(loginInput.value);
+
+    if (loginInput.value === passwordInput.value) {
+        console.log('значения совпадают')
+    } else {
+        console.log('значения не совпадают') 
+    }
+});
 
 
