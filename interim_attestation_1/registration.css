@@ -173,6 +173,55 @@ form {
 .box-form__textarea {
     height: calc(246 / 1440 * 100vw);
 }
+
+.box-form__agreement {
+    position: relative;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.box-form__agreement > input {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.box-form__checkbox_custom {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #787878;
+    margin-right: 5px;
+}
+
+.check::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 2px;
+    margin-top: -5px;
+    border: 2px solid #787878;
+}
+  
+.check::after {
+    content: "";
+    opacity: 0;
+    position: absolute;
+    left: 7px;
+    width: 11px;
+    height: 11px;
+    margin-top: 0px;
+    border: 1px solid #787878;
+    background: #787878;
+}
+
+.box-form__agreement > input:checked + .check::after {
+    opacity: 1;
+}
   
 .box-form__button {
     position: relative;
