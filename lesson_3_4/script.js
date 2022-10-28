@@ -1,114 +1,100 @@
 'use strict'
 
-const str = 'строка'.toUpperCase();
-const str2 = 'СтРока'.toLowerCase();
+console.log('Hello, world!', 1);
 
-console.log('Строка'.toUpperCase);
-
-console.log('Строка'.includes('Стр'));
-console.log('Строка'.startsWith('Стр'));
-console.log('Строка'.endsWith('ока'));
-
-console.log('А роза упала на лапу Азора'.replace('А', 'а'));
-console.log('А роза упала на лапу Азора'.replaceAll('А', 'а'));
-
-const strWithGaps = '        строка с пробелами     ';
-console.log(str.trim)
-
-const hi = 'Привет!';
-console.log(hi[0]);
-console.log(hi.length);
-console.log(hi.substring(2, 4));
-
-const startsWith = '     Строка      '.trim.toLowerCase().startsWith('стр');
-const str4 = 'Строк начинается с "стр": '.concat(startsWith);
-
-//  || - или
-//  && - и
-//  ! - не
-
-const a = null;
-const b = 'Строка';
-const c = 0;
-
-const resultOr = a || b || c;
-const resultAnd = a && b && c;
-
-const num1 = 5;
-const num2 = 5;
-const num3 = 6;
-
-const result = num1 == num2;
-const result2 = num1 === num2;  // оператор строгого сравнения
-
-const result3 = num1 != num2;
-const result4 = num1 !== num2;
-
-
-console.log(num1 > num2);
-console.log(num1 < num2);
-console.log(num1 >= num2);
-console.log(num1 <= num2);
-
-if (num1 >= 5) {
-    console.log('Число больше или равно 5');
-} else {
-    console.log('ИНАЧЕ');
+for (let i = 0; i < 10; i++) {
+    console.log('Hello, world!', i + 1);
 }
 
-const age = 39;
-const firstName = 'Pawel';
-const lastName = 'Macivoda';
+let isLoopContinues = true;
+let i = 0;
 
-if (age > 18 && age < 40) {
-    console.log('Ваш возраст от 18 до 40');
-}
+while (isLoopContinues) {
+    i = Math.random();
+    console.log(i)
 
-if (firstName === 'Pawel' || firstName === 'Pavel' && age > 18) {
-    console.log('Условие выполнилось');
-}
-
-if ((firstName === 'Pawel' || firstName === 'Pavel') && age > 18) {
-    console.log('Условие выполнилось');
-}
-
-const someVariable = 'Значение 3';
-
-switch (someVariable) {
-    case 'Значение 1': console.log('1'); break;
-    case 'Значение 2': console.log('2'); break;
-    case 'Значение 3': console.log('3'); break;
-    default: console.log('default');
-}
-
-switch (someVariable) {
-    case 'Значение 1': {
-        console.log('1')
-    } break;
-    case 'Значение 2': console.log('2'); break;
-    case 'Значение 3': console.log('3'); break;
-    default: console.log('default');
-}
-
-const loginInput = document.getElementById('login');
-const passwordInput = document.getElementById('password');
-const button = document.getElementById('send');
-
-loginInput.addEventListener('input', (event) => {
-    console.log(event.target.value)
-});
-
-
-button.addEventListener('click', (event) => {
-    event.preventDefault();
-    console.log(passwordInput.value);
-    console.log(loginInput.value);
-
-    if (loginInput.value === passwordInput.value) {
-        console.log('значения совпадают')
-    } else {
-        console.log('значения не совпадают') 
+    if (i > 0.5) {
+        isLoopContinues = false;
     }
-});
+}
 
+do {
+    i = Math.random();
+    console.log(i)
 
+    if (i > 0.5) {
+        isLoopContinues = false;
+    } else {
+        isLoopContinues = true;
+    }
+} while (isLoopContinues);
+
+while (isLoopContinues) {
+    i = Math.round
+    Math.ceil
+    Math.floor
+    Math.trunc
+
+    if (i === 9) {
+        isLoopContinues = false;
+    }
+}
+
+// res = a * b + k
+
+// Function declaration
+
+function sayHelloToUser(firstName = '', lastName = '') {
+    const someVariable = 39;
+    console.log(`Привет, ${firstName} ${lastName}`);
+}
+
+sayHelloToUser('Иван', 'Петров');
+sayHelloToUser('Elon', 'Musk');
+
+// Function expression
+
+const sayHello2 = function() {
+    console.log('Hello world!');
+}
+
+// Function expresstion (lambda - стрелочная функция)
+
+const sayHello3 = () => {
+    console.log('Hello world!');
+}
+
+// IIFE - Immediately Invoked Function Expression
+(function(name) {
+    console.log('Hello form IFE', name)
+})();
+
+sayHello3();
+
+// функциональная область видимости - устарела
+
+var someVariable2 = 'hello';
+
+function sayHello4() {
+    var someVariable2 = 'Hello';
+}
+
+if (true) {
+    var someVariable2 = 'Hello';
+}
+
+// блочная область видимости
+
+// возвращаемое 
+
+function sayHello5() {
+    console.log('Hello world!');
+}
+
+function getSum(a, b) {
+    return a + b;
+}
+
+const sum = getSum(4, 5);
+
+const random = Math.random();
