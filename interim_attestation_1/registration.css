@@ -362,6 +362,7 @@ form {
         width: calc(180 / 768 * 100vw);
         height: calc(52 / 768 * 100vw);
         font-size: calc(24 / 768 * 100vw);
+        text-align: center;
     }
 }
 
