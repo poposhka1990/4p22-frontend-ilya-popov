@@ -55,7 +55,7 @@ a:hover {
 
 .box-form {
     position: relative;
-    top: calc(205 / 1440 * 100vw);
+    top: calc(100 / 1440 * 100vw);
     width: calc(600 / 1440 * 100vw);
     margin: 0 auto;
     padding-top: calc(26 / 1440 * 100vw);
@@ -136,7 +136,7 @@ form {
 
 @media screen and (max-width: 768px) {
     .box-form {
-        top: calc(160 / 768 * 100vw);
+        top: calc(50 / 768 * 100vw);
         width: calc(600 / 768 * 100vw);
         margin: 0 auto;
         width: calc(600 / 768 * 100vw);

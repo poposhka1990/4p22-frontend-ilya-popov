@@ -55,7 +55,7 @@ a:hover {
 
 .box-form {
     position: relative;
-    top: calc(50 / 1440 * 100vw);
+    top: calc(100 / 1440 * 100vw);
     width: calc(600 / 1440 * 100vw);
     margin: 0 auto;
     padding-top: calc(26 / 1440 * 100vw);
