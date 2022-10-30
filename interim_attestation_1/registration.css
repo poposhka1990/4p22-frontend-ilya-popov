@@ -104,7 +104,7 @@ form {
     color: #787878;
 }
   
-.box-form__input:focus {
+.box-form__input:focus, .box-form__textarea:focus {
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
     outline: none;
 }
