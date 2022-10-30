@@ -61,6 +61,7 @@ a:hover {
     top: calc(100 / 1440 * 100vw);
     width: calc(600 / 1440 * 100vw);
     margin: 0 auto;
+    margin-bottom: 50px;
     padding-top: calc(26 / 1440 * 100vw);
     padding-right: calc(45 / 1440 * 100vw);
     padding-bottom: calc(45 / 1440 * 100vw);
@@ -294,6 +295,7 @@ form {
     line-height: calc(16 / 1440 * 100vw);
     color: #ffffff;
     border: none;
+    text-align: center;
 }
   
 .box-form__button:hover {
@@ -308,8 +310,8 @@ form {
     .box-form {
         top: calc(50 / 768 * 100vw);
         width: calc(600 / 768 * 100vw);
-        /* height: auto; */
         margin: 0 auto;
+        margin-bottom: 100px;
         width: calc(600 / 768 * 100vw);
         padding-top: calc(26 / 768 * 100vw);
         padding-right: calc(45 / 768 * 100vw);
@@ -370,6 +372,10 @@ form {
         display: flex;
         flex-direction: column;
         height: 100%;
+    }
+
+    .box-form {
+        margin-bottom: 100px;
     }
 
     .rightside > a {
