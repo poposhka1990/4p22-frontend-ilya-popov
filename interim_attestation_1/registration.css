@@ -80,6 +80,7 @@ form {
 }
 
 .box-form__label {
+    padding-bottom: 3px;
     font-weight: 700;
     font-size: calc(16 / 1440 * 100vw);
     line-height: calc(16 / 1440 * 100vw);
@@ -91,7 +92,7 @@ form {
     height: calc(49 / 1440 * 100vw);
     margin-bottom: calc(13 / 1440 * 100vw);
     padding-left: calc(13 / 1440 * 100vw);
-    border: 1px solid #787878;
+    border: 1.5px solid #787878;
     background: #ffffff;
     font-weight: 700;
     font-size: calc(28 / 1440 * 100vw);
@@ -153,7 +154,7 @@ form {
     border-radius: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
-    border: 2px solid #787878;
+    border: 1.5px solid #787878;
 }
 
 .box-form__radio_input:checked::after {
@@ -171,60 +172,115 @@ form {
 }
 
 .box-form__textarea {
+    text-indent: 5px;
     height: calc(246 / 1440 * 100vw);
+    border: 1.5px solid #787878;
+    background: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: calc(28 / 1440 * 100vw);
+    color: #787878;
+    resize: none;
 }
 
-.box-form__agreement {
-    position: relative;
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
+.box-form__textarea::placeholder {
+    padding-left: 0px;
 }
 
-.box-form__agreement > input {
-    opacity: 0;
+.box-form__hidden-check {
     position: absolute;
+    width: 0%;
+    height: 0%;
+    opacity: 0;
+}
+
+.box-form__container-check {
+    display: inline-block;
+    position: relative;
+    top: 20px;
+    left: -1px;
     width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
+    margin-bottom: 7px;
 }
-
-.box-form__checkbox_custom {
-    width: 16px;
-    height: 16px;
-    border: 2px solid #787878;
-    margin-right: 5px;
+  
+.box-form__label_right {
+    margin: 13px 0 5px 36px;
+    top: 50%;
+    transform: translateY(-50%);
 }
-
-.check::before {
+  
+.box-form__label_right::before {
     content: "";
     position: absolute;
     width: 16px;
     height: 16px;
     left: 2px;
     margin-top: -5px;
-    border: 2px solid #787878;
+    border: 1.5px solid #787878;
+    border-radius: 50%;
 }
   
-.check::after {
+.box-form__label_right::after {
     content: "";
     opacity: 0;
     position: absolute;
     left: 7px;
-    width: 11px;
-    height: 11px;
+    width: 13px;
+    height: 13px;
     margin-top: 0px;
     border: 1px solid #787878;
+    border-radius: 50%;
     background: #787878;
 }
-
-.box-form__agreement > input:checked + .check::after {
+  
+.box-form__hidden-check:checked + .box-form__label_right::after {
     opacity: 1;
+}
+  
+.box-form__input_long {
+    resize: none;
+    width: 100%;
+    height: 246px;
+    margin-bottom: 34px;
+}
+
+.box-form__label_lower::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 1px;
+    width: 18px;
+    height: 18px;
+    margin-bottom: 1px;
+    border: 2px solid #787878;
+}
+  
+.box-form__label_lower::after {
+    content: "";
+    opacity: 0;
+    position: absolute;
+    bottom: 4px;
+    left: 6px;
+    width: 12px;
+    height: 12px;
+    background: #787878;
+}
+  
+.box-form__hidden-check:checked + .box-form__label_lower::after {
+    opacity: 1;
+}
+  
+.box-form__label_lower {
+    margin: 1px 1px 2px 36px;
+    font-weight: 400;
+    top: 50%;
+    transform: translateY(-50%);
 }
   
 .box-form__button {
     position: relative;
+    top: 25px;
+    margin-bottom: 20px;
     left: 33%;
     width: calc(180 / 1440 * 100vw);
     height: calc(52 / 1440 * 100vw);
@@ -247,7 +303,7 @@ form {
 
 @media screen and (max-width: 768px) {
     .box-form {
-        top: calc(160 / 768 * 100vw);
+        top: calc(50 / 768 * 100vw);
         width: calc(600 / 768 * 100vw);
         margin: 0 auto;
         width: calc(600 / 768 * 100vw);
@@ -282,7 +338,18 @@ form {
     
     .box-form__label {
         font-size: calc(16 / 768 * 100vw);
-        padding-bottom: 5px;
+        padding-bottom: 3px;
+    }
+
+    .box-form__textarea {
+        height: calc(246 / 768 * 100vw);
+        font-size: calc(28 / 768 * 100vw);
+    }
+
+    .box-form__label_lower {
+        margin-left: 30px;
+        top: 50%;
+        transform: translateY(-50%);
     }
 
     .box-form__button {
@@ -290,7 +357,6 @@ form {
         height: calc(52 / 768 * 100vw);
         font-size: calc(24 / 768 * 100vw);
     }
-
 }
 
 @media screen and (max-width: 611px) {
