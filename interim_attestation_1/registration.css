@@ -61,7 +61,7 @@ a:hover {
     top: calc(100 / 1440 * 100vw);
     width: calc(600 / 1440 * 100vw);
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-bottom: calc(150 / 1440 * 100vw);
     padding-top: calc(26 / 1440 * 100vw);
     padding-right: calc(45 / 1440 * 100vw);
     padding-bottom: calc(45 / 1440 * 100vw);
