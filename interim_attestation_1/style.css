@@ -175,7 +175,7 @@ form {
     
     .box-form__label {
         font-size: calc(16 / 768 * 100vw);
-        padding-bottom: 5px;
+        padding-bottom: calc(5 / 768 * 100vw);
     }
 
     .box-form__button {
