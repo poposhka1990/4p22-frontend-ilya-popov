@@ -30,7 +30,7 @@ img {
 .leftside {
     display: flex;
     align-items: center;
-    font-size: 36px;
+    font-size: calc(45 / 1440 * 100vw);
 }
 
 .leftside > img {
@@ -39,6 +39,10 @@ img {
 
 .rightside, .registration {
     padding: 0 15px;
+}
+
+.rightside {
+    font-size: calc(24 / 1440 * 100vw);
 }
 
 a {
@@ -145,8 +149,8 @@ form {
         padding-left: calc(45 / 768 * 100vw);
     }
 
-    .leftside {
-        font-size: 24px;
+    .leftside > span {
+        font-size: calc (16 / 768 * 100vw);
     }
 
     .rightside > a {
@@ -186,6 +190,10 @@ form {
         display: flex;
         flex-direction: column;
         height: 100%;
+    }
+
+    .box-form {
+        margin-bottom: 100px;
     }
 
     .rightside > a {
