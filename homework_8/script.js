@@ -33,13 +33,13 @@ formEl.addEventListener('submit', (e) => {
         return;  
     } else if (!operator) {
         alert('Не введен знак'); 
-        return;  
+        return; 
     } else if (!['+', '-', '*', '/'].includes(operator)) {
         alert('Программа не поддерживает такую операцию'); 
         return;  
     } else if (operator === '/' && +secondNumber === 0) {
         alert('Операция некорректна'); 
-        return; 
+        return;
     }
     
     switch (operator) {
