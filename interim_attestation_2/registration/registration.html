@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Registration</title>
+        <link rel="stylesheet" type="text/css" href="./registration.css" />
+        <link rel="preconnect" href="https://rsms.me/" />
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+        <script src="/scripts/registration.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div class="leftside">
+                <img src="../img/IU_logo.png" alt="Innopolis University Logo" />
+                <span>PCS Frontend</span>
+            </div>
+            <div class="rightside">
+                <a class="registration" href="./registration.html"
+                    >Регистрация</a
+                >
+                <a class="login" href="/index/index.html">Вход</a>
+            </div>
+        </header>
+        <main class="box-form">
+            <h1 class="box-form__h1">Регистрация</h1>
+            <form id="registrationForm" class="box-form__form">
+                <label class="box-form__label" for="email">
+                    * Email
+                    <span class="box-form__email_error"></span>
+                </label>
+                <input
+                    class="box-form__input"
+                    id="email"
+                    type="text"
+                    name="email"
+                    placeholder="Введите email"
+                />
+                <label class="box-form__label" for="password">
+                    * Пароль
+                    <span class="box-form__password_error"></span>
+                </label>
+                <input
+                    class="box-form__input"
+                    id="password"
+                    type="password"
+                    name="password"
+                    placeholder="Введите пароль"
+                />
+                <label class="box-form__label" for="password-check">
+                    * Подтверждение пароля
+                    <span class="box-form__password-repeat_error"></span>
+                </label>
+                <input
+                    class="box-form__input"
+                    id="password-check"
+                    type="password"
+                    name="passwordRepeat"
+                    placeholder="Подтвердите пароль"
+                />
+
+                <div class="box-form__radio">
+                    <p class="box-form__label">Пол</p>
+                    <div class="box-form__radio_man">
+                        <input
+                            class="box-form__radio_input"
+                            id="radio-1"
+                            type="radio"
+                            name="gender"
+                            value="man"
+                        />
+                        <label class="box-form__label radio" for="radio-1"
+                            >Мужчина</label
+                        >
+                    </div>
+                    <div class="box-form__radio_woman">
+                        <input
+                            class="box-form__radio_input"
+                            id="radio-2"
+                            type="radio"
+                            name="gender"
+                            value="woman"
+                        />
+                        <label class="box-form__label radio" for="radio-2"
+                            >Женщина</label
+                        >
+                    </div>
+                </div>
+
+                <label class="box-form__label" for="textarea">О себе</label>
+                <textarea
+                    class="box-form__textarea"
+                    id="textarea"
+                    name="textarea"
+                    placeholder="Расскажите о себе..."
+                ></textarea>
+
+                <div class="box-form__container-check">
+                    <input
+                        class="box-form__hidden-check"
+                        id="agreement"
+                        type="checkbox"
+                        name="agreement"
+                    />
+                    <label
+                        class="box-form__label box-form__label_lower"
+                        for="agreement"
+                        >Я согласен получать обновления на почту</label
+                    >
+                </div>
+                <button class="box-form__button">Регистрация</button>
+            </form>
+        </main>
+    </body>
+</html>
