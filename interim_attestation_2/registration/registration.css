@@ -11,6 +11,11 @@
     font-weight: bold;
 }
 
+html {
+    overflow-x: hidden;
+    margin-right: calc(-1 * (100vw - 100%));
+}
+
 header {
     position: sticky;
     top: 0;
