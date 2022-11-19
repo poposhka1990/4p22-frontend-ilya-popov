@@ -8,12 +8,18 @@
         <script src="./script.js" defer></script>
     </head>
     <body>
-        <form id="calculator">
-            <input name="firstNumber" step="any" type="number" /><br />
-            <input name="operator" type="text" /><br />
-            <input name="secondNumber" step="any" type="number" /><br />
-            <button>Расчёт</button>
-        </form>
-        <span id="result"></span>
+        <div class="container">
+            <form id="calculator">
+                <h1>Упрощенный калькулятор</h1>
+                <label for="firstNumber">Первое число:</label>
+                <input name="firstNumber" step="any" type="number" /><br />
+                <label for="firstNumber">Знак (+, -, *, /)</label>
+                <input name="operator" type="text" /><br />
+                <label for="firstNumber">Второе число:</label>
+                <input name="secondNumber" step="any" type="number" /><br />
+                <button>Расчёт</button>
+            </form>
+        </div>
+        <span class="result" id="result"></span>
     </body>
 </html>
